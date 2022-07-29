@@ -4,14 +4,13 @@ from platform import python_version
 
 
 
-@Ubot.on(events.NewMessage(pattern=r'\.alive'))
+@Ubot.on(events.NewMessage(pattern=r'\.mummy'))
 async def amialive(event):
     me = await Ubot.get_me()
     await event.edit(f'''
-**USERBOT is Working Fine!**
+**Teri Mummy Meri Hoja!**
 **Telethon version:** `{version.__version__}`
 **Python version:** `{python_version()}`
-**Repo:** [GitHub](https://github.com/Xbinner18/ccchk-ub)
 **Master:** [{me.first_name}](tg://user?id={me.id})
 ''') 
     
@@ -20,7 +19,7 @@ async def amialive(event):
 async def helper(event):
     await event.edit(f'''
 **Dont Fear help is here!**
-• .alive <chk ubot is up or not>.
+• .mummy <chk ubot is up or not>.
 • .st <cc|mm|yy|csc> to chk cards.
 • .paste <to unpack openbullet/storm configs or paste codes> .
 • .tr <translate replied msg> to eng ex reply .tr en
